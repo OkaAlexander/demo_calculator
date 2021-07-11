@@ -1,0 +1,143 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS syntax</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+        }
+
+        .content{
+            width: 300px;
+            height: 50%;
+            background: white;
+            box-shadow: 1px 2px 7px 3px #ccc;
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        .screen{
+            width: 100%;
+            height: 40px;
+            margin-bottom: 10px;
+            padding: 10px;
+            outline: none;
+        }
+
+        .numbers{
+            width: 100%;
+            height: 100%;
+        }
+
+        .flex{
+            display: flex;
+            justify-content: center;
+        }
+
+        .actions{
+            display: flex;
+            flex-direction: column;
+        }
+
+        button{
+            width: 75px;
+            height: 70px;
+            border: outset;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        button:hover{
+            border: inset;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="content">
+            <input type="text" class="screen" id="screen" />
+            <div style="display: flex;">
+                <div class="numbers">
+                    <div class="flex">
+                        <button onclick="inputNumber('9')">9</button>
+                        <button onclick="inputNumber('8')">8</button>
+                        <button onclick="inputNumber('7')">7</button>
+                    </div>
+                    <div class="flex">
+                        <button onclick="inputNumber('6')">6</button>
+                        <button onclick="inputNumber('5')">5</button>
+                        <button onclick="inputNumber('4')">4</button>
+                    </div>
+                    <div class="flex">
+                        <button onclick="inputNumber('3')">3</button>
+                        <button onclick="inputNumber('2')">2</button>
+                        <button onclick="inputNumber('1')">1</button>
+                    </div>
+                    <div class="flex">
+                        <button style="width: 50%; height: 70px" onclick="inputNumber('0')">0</button>
+                        <button style="width: 50%; height: 70px" onclick="inputNumber('.'`)">.</button>
+                    </div>
+                </div>
+                <div class="actions">
+                    <button onclick="inputNumber('+')">+</button>
+                    <button onclick="inputNumber('-')">-</button>
+                    <button onclick="inputNumber('/')">/</button>
+                    <button onclick="checkEqual()">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+   <!--  <script>
+        // for loop
+        /* for (var count = 0; count < 100; count++){
+            document.write(count);
+            document.write("<br />");
+        } */
+
+        /* for (var count = 0; count <= 1000; count++){
+            document.write(count);
+            document.write("")
+        } */
+/*
+        while loop
+        var name = prompt("Enter name");
+
+        while(name !== "Tutu"){
+            document.write("wrong name");
+            name = prompt("Enter different name: ");
+        } */
+        /* var name;
+        do{
+            name = prompt("Enter name: ");
+            
+            document.write(name);
+        }while(name !== "Tutu") */
+        /* var name = "random name";
+
+        if (name == "kofi"){
+            document.write(name);
+        }
+        else if(name == "kwame"){
+            
+        }
+        else{
+            document.write("this happened because condition is false")
+        } */
+    </script> -->
+</body>
+</html>
